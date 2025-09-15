@@ -1,0 +1,17 @@
+name: Basic CI Pipeline
+
+# Trigger this pipeline on every push
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Stage
+        run: echo "Application build success"
+
+      - name: Test Stage
+        run: echo "Test Cases passed"
+
+      - name: Deploy Stage
+        run: echo "Application deployed successfully done"
